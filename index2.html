@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="seccion">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </section> 
+    
+    <script type="text/javascript">
+        //documen accede al bosy
+        //el siguiente es para ID
+        //document.getElementById("seccion").innerHTML=`david jara`;
+        //EL SIGUIENTE SOLO APLICA A 1 PARA TODO PONER EN BUCLE. 
+        //document.getElementsByClassName("caja")[0].innerHTML=`opcion 1`;
+        //document.getElementsByTagName("div")[1].innerHTML =`davidddd`;
+        //QUERYSELECTOR EN PARENTESIS SI PUEDE PONER EL MISMO TIPADO DEL CSS DE LOS ID Y CLASS
+        //document.querySelector("#seccion").innerHTML=`ndasjnd`;
+        //document.querySelector(".caja .contenido").innerHTML=`ndasjnd`;
+        
+        
+        //CREA ALGO PARCIDO A UN ARRAY CON TODAS LAS CAJAS
+        let caja = document.getElementsByClassName("caja");
+        //document.getElementById("seccion").innerHTML=`<h1>${caja.length}<h1>`;
+        
+        document.querySelector("section").innerHTML+=`<h1 class="caja">${caja.length}<h1>`;        
+            document.querySelector("section").innerHTML+=`<h1 class="caja">${caja.length}<h1>`;        
+        
+    </script>   
+</body>
+</html>
